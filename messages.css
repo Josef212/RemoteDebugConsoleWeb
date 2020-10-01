@@ -1,0 +1,19 @@
+span.warning {
+    color: #f4e542;
+}
+
+span.assert {
+    color: #f4e542;
+}
+
+span.error {
+    color: #ff0000;
+}
+
+span.exception {
+    color: #ff0000;
+}
+
+span.help {
+    color: #16f3ff;
+}
