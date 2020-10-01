@@ -8,15 +8,19 @@ html, body {
     --console-text-color: #f0f0f0;
 }
 
-#output.console {
-    background-color: #383838;
-    color: #f0f0f0;
-
-    height: 100%;
-    width: 100%;
-
+.console {
     font-size: 14px;
     font-family: monospace;
+
+    width: 100%;
+
+    color: #f0f0f0;
+}
+
+#output.console {
+    background-color: #383838;
+
+    height: 100%;
 
     overflow-x: auto;
     overflow-y: auto;
@@ -27,12 +31,6 @@ html, body {
 
 #input.console {
     background-color: #494949;
-    color: #f0f0f0;
-
-    width: 100%;
-
-    font-size: 14px;
-    font-family: monospace;
 
     position: fixed;
     bottom: 0px;
@@ -41,8 +39,6 @@ html, body {
 }
 
 .window {
-    padding: 10px;
-
     background-color: #494949;
     color: #f0f0f0;
 
@@ -55,11 +51,60 @@ html, body {
     right: 10px;
     top: 10px;
 
-    opacity: 0.1;
+    opacity: 0.2;
 }
 
 .window:hover {
     opacity: 1;
+}
+
+.windowHeader {
+    width: 100%;
+    height: 20px;
+    background-color: #252525;
+}
+
+.windowHeaderBtn {
+    font-family: monospace;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    text-align: left;
+}
+
+#openWindowBtn {
+    
+}
+
+#openWindowBtn::after {
+    content: "\02795"; /* + */
+    float: right;
+}
+
+#closeWindowBtn {
+    
+}
+
+#closeWindowBtn::after {
+    content: "\2796"; /* - */
+    float: right;
+}
+
+.windowContent {
+    padding: 10px;
+
+    font-size: 14px;
+    font-family: monospace;
+    color: #f0f0f0;
 }
 
 .window .windowTitle {
@@ -71,10 +116,4 @@ html, body {
 
     text-align: center;
     margin-bottom: 10px;
-}
-
-.windowContent {
-    font-size: 14px;
-    font-family: monospace;
-    color: #f0f0f0;
 }
